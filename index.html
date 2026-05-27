@@ -1687,6 +1687,7 @@ ul { list-style: none; }
     <li><a href="#process" class="nav__link">How It Works</a></li>
     <li><a href="#pricing" class="nav__link nav__link--pricing">Pricing</a></li>
     <li><a href="#team" class="nav__link">Team</a></li>
+    <li><a href="#privacy" class="nav__link">Privacy</a></li>
     <li><a href="#faq" class="nav__link">FAQ</a></li>
   <li><a href="#" class="nav__link nav__link--signin" onclick="openPortal();return false;">Sign In</a></li>
   </ul>
@@ -1707,6 +1708,7 @@ ul { list-style: none; }
   <a href="#process" class="headline-card" onclick="toggleMobileMenu()">How It Works</a>
   <a href="#pricing" class="headline-card" style="color:var(--dbp-red);" onclick="toggleMobileMenu()">Pricing</a>
   <a href="#team" class="headline-card" onclick="toggleMobileMenu()">Team</a>
+  <a href="#privacy" class="headline-card" onclick="toggleMobileMenu()">Privacy</a>
   <a href="#faq" class="headline-card" onclick="toggleMobileMenu()">FAQ</a>
   <a href="javascript:void(0)" onclick="toggleMobileMenu();openModal('standard')" class="btn-primary">Get Your Profile &rarr;</a>
   <a href="#" class="headline-card" style="font-size:13px;opacity:0.6;" onclick="openPortal();toggleMobileMenu();return false;">Sign In</a>
@@ -2057,6 +2059,45 @@ ul { list-style: none; }
   </div>
 </section>
 
+<!-- PRIVACY & SAFETY -->
+<section class="section" id="privacy">
+  <div class="container">
+    <div>
+      <div class="section-label" style="justify-content:center;">// Privacy &amp; Safety</div>
+      <h2 class="headline-section" style="text-align:center;">Built for<br><em>Young Athletes.</em></h2>
+      <p class="body-text" style="text-align:center;max-width:720px;margin:16px auto 0;">DBP Elite handles names, dates of birth, and parent contact details for minors. We treat that responsibility the way we'd want our own kids' data treated &mdash; with a verified consent chain, encryption at rest, and a one-click escape hatch if you change your mind.</p>
+    </div>
+    <div class="process-strip" style="margin-top:32px;">
+      <div class="process-step">
+        <div class="process-step__num">13+</div>
+        <div class="process-step__title">Age Floor</div>
+        <div class="process-step__desc">No accounts for athletes under 13. The age gate is enforced server-side &mdash; no workaround path.</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">&#9993;</div>
+        <div class="process-step__title">Parent Consent</div>
+        <div class="process-step__desc">Verified by magic-link email + typed e-signature before any profile is generated or shared.</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">&#128274;</div>
+        <div class="process-step__title">Encrypted At Rest</div>
+        <div class="process-step__desc">Date of birth, parent / athlete / agent contact info &mdash; AES encrypted in the database, not plaintext.</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">&darr;</div>
+        <div class="process-step__title">Download Anytime</div>
+        <div class="process-step__desc">One click downloads everything we store about your athlete &mdash; profile fields, photos, signatures, audit history.</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">&times;</div>
+        <div class="process-step__title">Permanent Erase</div>
+        <div class="process-step__desc">Type the athlete's name to confirm and every record &mdash; database row, photos, generated profile versions &mdash; is gone for good.</div>
+      </div>
+    </div>
+    <p class="pricing-note" style="text-align:center;margin-top:28px;">Read the full <a href="legal/privacy.html">privacy policy</a> and <a href="legal/dpa.html">data processing addendum</a>.</p>
+  </div>
+</section>
+
 <!-- WHY IT MATTERS -->
 <section class="section section--alt">
   <div class="container">
@@ -2199,7 +2240,14 @@ ul { list-style: none; }
           <span class="faq-question">Who manages the profile? What about youth athletes?</span>
           <i class="faq-icon">+</i>
         </button>
-        <div class="faq-answer">The athlete&#39;s parent or guardian manages all profile data, photos, video links, and regeneration requests. For youth athletes (under 18), the parent account is the authoritative owner. The profile itself belongs to the athlete and family &mdash; not to DBP, not to a platform.</div>
+        <div class="faq-answer">The athlete&#39;s parent or guardian manages all profile data, photos, video links, and regeneration requests. We don&#39;t accept accounts for athletes under 13 &mdash; the age floor is enforced server-side, with no workaround path. For all minors, we additionally require a verified parental e-signature (magic-link email) before any profile is generated or shared. The profile itself belongs to the athlete and family &mdash; not to DBP, not to a platform.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-question">How do you protect my athlete&#39;s personal data?</span>
+          <i class="faq-icon">+</i>
+        </button>
+        <div class="faq-answer">Identity fields &mdash; date of birth, parent and athlete contact details, agent contact info &mdash; are AES-encrypted at rest in our database, not stored as plaintext. We don&#39;t share data with third parties for marketing. You can download a complete copy of everything we store about your account from the dashboard at any time, or permanently erase the whole record (database row, photos, generated profile versions) with a typed-name confirmation. Every consent request, signature, download, and erasure is logged in an immutable audit trail you can review in your dashboard.</div>
       </div>
       <div class="faq-item">
         <button class="faq-btn" onclick="toggleFaq(this)">
@@ -2264,6 +2312,7 @@ ul { list-style: none; }
         <li><a href="#profile" class="site-footer__link">The Profile</a></li>
         <li><a href="#process" class="site-footer__link">How It Works</a></li>
         <li><a href="#team" class="site-footer__link">Our Team</a></li>
+        <li><a href="#privacy" class="site-footer__link">Privacy &amp; Safety</a></li>
         <li><a href="#" onclick="openPortal();return false;" class="site-footer__link">Sign In</a></li>
       </ul>
     </div>
